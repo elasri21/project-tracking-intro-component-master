@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  position: relative;
+}
+@media (min-width: 768px) {
+  body::after {
+    height: 50% !important;
+  }
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70%;
+  width: 50%;
+  border-radius: 0 0 0 100px;
+  background-color: #eef3f6;
+  z-index: -111111;
+}
+
+h1, h2, a, button {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a0a1ac;
+  transition: all .3s ease-in-out;
+}
+button:hover {
+  text-decoration: underline;
+}
+button.demo {
+  background-color: #ff5c5c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+button.demo:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+
+header {
+  position: relative;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 30px 50px;
+  }
+  header nav {
+    display: flex !important;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    margin-right: 20px;
+  }
+  header nav ul li:last-child {
+    margin-right: 50px;
+  }
+  header .menu {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  header nav {
+    position: absolute;
+    width: 95%;
+    padding: 20px;
+    border-radius: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    background-color: white;
+    box-shadow: 5px -5px 20px #eef3f6, -5px 5px 20px #eef3f6;
+  }
+  header nav ul {
+    border-bottom: 1px solid #5b5f71;
+  }
+  header nav ul li {
+    margin-bottom: 20px;
+  }
+  header nav ul li a {
+    display: block;
+    text-align: center;
+  }
+  header nav button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+header nav {
+  display: none;
+}
+header nav ul li a {
+  color: #242942;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header .menu {
+  cursor: pointer;
+}
+header .close {
+  display: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px 20px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section .main {
+    width: 50%;
+  }
+  section .img {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  section {
+    flex-direction: column;
+  }
+  section .main {
+    order: 2;
+  }
+  section .img {
+    order: 1;
+  }
+}
+section .main {
+  padding: 30px 0;
+}
+section .main .top {
+  margin-bottom: 20px;
+}
+section .main .top span {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section .main .top span.new {
+  letter-spacing: 1px;
+  color: white;
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #242942;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+section .main .top span.dash {
+  color: #a0a1ac;
+  letter-spacing: 2px;
+}
+section .main h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #242942;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+section .main .desc {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #a0a1ac;
+  margin-bottom: 20px;
+}
+section .main .contact .preview {
+  text-transform: uppercase;
+  color: #a0a1ac;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+section .img {
+  padding: 30px 0;
+}
+section .img img {
+  width: 100%;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */

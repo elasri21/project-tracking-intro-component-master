@@ -1,20 +1,16 @@
-const closeBtn = document.querySelector('.close-btn button')
-const closeDiv = document.querySelector('.close-btn')
-const openBtn = document.querySelector('.open-btn button')
-const openDiv = document.querySelector('.open-btn')
+const closeMenu = document.querySelector('.close')
+const openMenu = document.querySelector('.menu')
 const nav = document.querySelector('nav')
 
-openBtn.addEventListener('click', function(){
-    openDiv.style.display = "none"
-    closeDiv.style.display = "block"
-    nav.style.display = "block"
-    
-})
+openMenu.addEventListener('click', function(){
+    this.style.display = "none";
+    closeMenu.style.display = "block";
+    nav.style.display = "block";
+});
 
 
-closeBtn.addEventListener('click', function(){
-    closeDiv.style.display = "none"
-    openDiv.style.display = "block"
-    nav.style.display = "none"
-    
-})
+closeMenu.addEventListener('click', function(){
+    this.style.display = "none";
+    nav.style.display = "none";
+    openMenu.style.display = "block";
+});
